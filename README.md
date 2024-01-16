@@ -9,9 +9,7 @@ Introduction
         a series of fully connected classification layers.
 Framework
 ====
-![]
-(https://github.com/lipi12q/DrugMAN/DrugMAN_framework.jpg
-) 
+![image](https://github.com/lipi12q/DrugMAN/blob/main/%7FDrugMAN_framework.jpg) 
 System Requirement
 ====
         The source code developed in Python 3.8 using PyTorch 2.0.0. The required python dependencies are given below. DrugMAN is supported for any standard computer and operating 
