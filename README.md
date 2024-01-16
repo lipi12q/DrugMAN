@@ -31,20 +31,37 @@ Installation Guide
         Second install required dependency packages. If your computer only has CPU, install the dependency package as follows:
         $ pip install scikit-learn == 1.3.0
         $ pip install numpy == 1.25
-        $ pip install pandas ==2.0.3
-        $ pip install joblib ==1.3.1
-        $ pip install matplotlib ==3.7.1
+        $ pip install pandas == 2.0.3
+        $ pip install joblib == 1.3.1
+        $ pip install matplotlib == 3.7.1
         IF your computer has GPU, install the dependency package as follows:
         $ pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
         $ pip install scikit-learn == 1.3.0
         $ pip install numpy == 1.25
-        $ pip install pandas ==2.0.3
-        $ pip install joblib ==1.3.1
-        $ pip install matplotlib ==3.7.1
+        $ pip install pandas == 2.0.3
+        $ pip install joblib == 1.3.1
+        $ pip install matplotlib == 3.7.1
 Datasets
 ====
         The data folder contains four folders and a csv file (`all_bind.csv`). The four foders are `drug_network`, `target_network`, 
         `bionic_emb` and `warm_start` separately.
+        `all_bind.csv`:  Drug-target interaction data are collected from five public sources including, Drugbank, map of Molecular 
+        Targets of Approved drugs (MTA), CTD, ChEMBL and BindingDB.
+        `drug_network`: Four drug-related similarity networks. `Drug_disease`: the disease-based drug association network. 
+        `drug_side effect`: the side effect-based drug network. `drug_transciptome`: the transcriptome-based drug similarity network. 
+        `drug_smiles`: the drug structure similarity network.
+        `target_network`: seven target-related similarity networks. `gene_disease`: the disease-based gene association network. 
+        `gene_pathway`: the pathway-based gene network. `gene_chromosomal`:the chromosomal location-based gene network. 
+        `gene_transcriptome`:the transcriptome-based gene similarity network. `gene_coexpression`:the gene co-expression network. 
+        `protein_sequence`: the protein sequence similarity network.
+        `bionic_embed`: Embedding of drugs and targets extracted by the heterogeneous network integration algorithm BIONIC, ie `drug_features.tsv` 
+        and `target_features.tsv`. 
+        warm_start: Five datasets obtained by `run data_split.py`. each datase is randomly divided into training, validation and test sets with a 7:1:2 ratio.
+Run DrugMAN on Our Data to Reproduce Result
+====
+        To train DrugMAN, where we provide the whole warm-start data in `data/warm_start/`. Run the `main.py`, you start train the model. 
+        The `main.py` takes about 15 minutes on GPU ram=24GB and approximately 9 hours on CPU ram=4GB. For running DrugMAN on the full warm-start data,
+        we advise GPU ram>=8GB and CPU ram >=16GB. The result will be saved in the `result` foder. 
 
 
 
