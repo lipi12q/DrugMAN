@@ -48,9 +48,7 @@ Installation Guide
 Datasets
 ====
 > `data/drug_network`: Drug-related similarity networks.
-
 > `data/gene_network`: Gene-related similarity networks.
-
 > `data/all_bind.csv`: Drug-target interaction data.
 
 > `drug_emb.json`: Input file of the heterogeneous network algorithm BIONIC to extracted drug represtation.
