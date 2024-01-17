@@ -17,13 +17,13 @@ System Requirement
 > The source code developed in Python 3.8 using PyTorch 2.0.0. The required python dependencies are given below.
 > DrugMAN is supported for any standard computer and operating system (Windows/macOS/Linux) with enough RAM to run.
 > There is no additional non-standard hardware requirements.
-        
-        torch >=2.0.0
-        scikit-learn >= 1.3.0
-        numpy >= 1.25
-        pandas >= 2.0.3
-        joblib >= 1.3.1
-        matplotlib >= 3.7.1
+                
+                torch >=2.0.0
+                scikit-learn >= 1.3.0
+                numpy >= 1.25
+                pandas >= 2.0.3
+                joblib >= 1.3.1
+                matplotlib >= 3.7.1
 
 Installation Guide
 ====
@@ -48,20 +48,18 @@ Installation Guide
 Datasets
 ====
 > `data/drug_network`: Drug-related similarity networks. <br>
-> `data/gene_network`: Gene-related similarity networks.
-> `data/all_bind.csv`: Drug-target interaction data.
-
-> `drug_emb.json`: Input file of the heterogeneous network algorithm BIONIC to extracted drug represtation.
-
-> `target_emb.json`: Input file of the heterogeneous network algorithm BIONIC to extracted target represtation.
+> `data/gene_network`: Gene-related similarity networks. <br>
+> `data/all_bind.csv`: Drug-target interaction data. <br>
+> `drug_emb.json`: Input file of the heterogeneous network algorithm BIONIC to extracted drug represtation.<br>
+> `target_emb.json`: Input file of the heterogeneous network algorithm BIONIC to extracted target represtation.<br>
 
 Run DrugMAN on Our Data to Reproduce Result
 ====
-> There are four steps to complete the process of training the model.
-> *Firt, run `data_split.py` to obtain train, validation and test set data.
-> *Second, run `drug_emb.json` using BIONIC algorithm to extracted drug represtation.
-> *Third, run `target_emb.json` using BIONIC algorithm to extracted target represation.
-> *Forth, run `main.py`. note that you need to create a `result` foder to store computational result.
+> There are four steps to complete the process of training the model. <br>
+> *Firt, run `data_split.py` to obtain train, validation and test set data. <br>
+> *Second, run `drug_emb.json` using BIONIC algorithm to extracted drug represtation.<br>
+> *Third, run `target_emb.json` using BIONIC algorithm to extracted target represation.<br>
+> *Forth, run `main.py`. note that you need to create a `result` foder to store computational result.<br>
 > The `main.py` takes about 15 minutes on GPU ram=24GB and approximately 6 hours on CPU ram=8GB. For running DrugMAN,
 > we advise GPU ram>=8GB and CPU ram >=16GB.
 
