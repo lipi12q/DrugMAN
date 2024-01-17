@@ -45,15 +45,16 @@ Datasets
     `target_network`, `bionic_emb` and `warm_start` separately.
     `all_bind.csv`:  Drug-target interaction data are collected from five public sources including, Drugbank, 
     map of Molecular Targets of Approved drugs (MTA), CTD, ChEMBL and BindingDB.
-    `drug_network`: Four drug-related similarity networks. `Drug_disease`: the disease-based drug association network. 
-    `drug_side effect`: the side effect-based drug network. `drug_transciptome`: the transcriptome-based drug similarity network. 
-    `drug_smiles`: the drug structure similarity network.
-    `target_network`: seven target-related similarity networks. `gene_disease`: the disease-based gene association network. 
-    `gene_pathway`: the pathway-based gene network. `gene_chromosomal`:the chromosomal location-based gene network. 
-    `gene_transcriptome`:the transcriptome-based gene similarity network. `gene_coexpression`:the gene co-expression network. 
-    `protein_sequence`: the protein sequence similarity network.
+    `drug_network`: Four drug-related similarity networks. `Drug_disease.csv`: the disease-based drug association network. 
+    `drug_side effect.csv`: the side effect-based drug network. `drug_transciptome.csv`: the transcriptome-based drug similarity network. 
+    `drug_smiles.csv`: the drug structure similarity network.
+    `target_network`: seven target-related similarity networks. `gene_disease.csv`: the disease-based gene association network. 
+    `gene_pathway.csv`: the pathway-based gene network. `gene_chromosomal.csv`:the chromosomal location-based gene network. 
+    `gene_transcriptome.csv`:the transcriptome-based gene similarity network. `gene_coexpression.csv`:the gene co-expression network. 
+    `protein_sequence.csv`: the protein sequence similarity network.
     `bionic_embed`: Embedding of drugs and targets extracted by the heterogeneous network integration algorithm BIONIC, ie `drug_features.tsv` and `target_features.tsv`. 
-     `warm_start`: Five datasets obtained by `run data_split.py`. each datase is randomly divided into training, validation and test sets with a 7:1:2 ratio.
+> `warm_start`: Five datasets obtained by `run data_split.py`. each datase is randomly divided into training, validation and test sets with a 7:1:2 ratio.
+
 Run DrugMAN on Our Data to Reproduce Result
 ====
         To train DrugMAN, where we provide the whole warm-start data in `data/warm_start/`. Run the `main.py`, you start train the model. 
