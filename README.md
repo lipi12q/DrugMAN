@@ -23,6 +23,7 @@ System Requirement
 Installation Guide
 ====
         Firt set up a new conda environment
+        ----
         # create a new conda environment
         $ conda create –name drugman pythonn==3.8
         $ conda activate drugman
