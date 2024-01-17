@@ -54,6 +54,7 @@ Datasets
     `protein_sequence.csv`: the protein sequence similarity network.
 >`bionic_embed`: Embedding of drugs and targets extracted by the heterogeneous network integration algorithm BIONIC,
 >ie `drug_features.tsv` and `target_features.tsv`. 
+
 >`warm_start`: Five datasets obtained by `run data_split.py`. each datase is randomly divided into training, validation and test sets with a 7:1:2 ratio.
 
 Run DrugMAN on Our Data to Reproduce Result
