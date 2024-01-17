@@ -18,32 +18,32 @@ System Requirement
 > DrugMAN is supported for any standard computer and operating system (Windows/macOS/Linux) with enough RAM to run.
 > There is no additional non-standard hardware requirements.
                 
-                torch >=2.0.0
-                scikit-learn >= 1.3.0
-                numpy >= 1.25
-                pandas >= 2.0.3
-                joblib >= 1.3.1
-                matplotlib >= 3.7.1
+    torch >=2.0.0
+    scikit-learn >= 1.3.0
+    numpy >= 1.25
+    pandas >= 2.0.3
+    joblib >= 1.3.1
+    matplotlib >= 3.7.1
 
 Installation Guide
 ====
-        Firt set up a new conda environment
-        # create a new conda environment
-        $ conda create –name drugman pythonn==3.8
-        $ conda activate drugman
-        Second install required dependency packages. If your computer only has CPU, install the dependency package as follows:
-        $ pip install scikit-learn == 1.3.0
-        $ pip install numpy == 1.25
-        $ pip install pandas == 2.0.3
-        $ pip install joblib == 1.3.1
-        $ pip install matplotlib == 3.7.1
-        IF your computer has GPU, install the dependency package as follows:
-        $ pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
-        $ pip install scikit-learn == 1.3.0
-        $ pip install numpy == 1.25
-        $ pip install pandas == 2.0.3
-        $ pip install joblib == 1.3.1
-        $ pip install matplotlib == 3.7.1
+    Firt set up a new conda environment
+    # create a new conda environment
+    $ conda create –name drugman pythonn==3.8
+    $ conda activate drugman
+    Second install required dependency packages. If your computer only has CPU, install the dependency package as follows:
+    $ pip install scikit-learn == 1.3.0
+    $ pip install numpy == 1.25
+    $ pip install pandas == 2.0.3
+    $ pip install joblib == 1.3.1
+    $ pip install matplotlib == 3.7.1
+    IF your computer has GPU, install the dependency package as follows:
+    $ pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+    $ pip install scikit-learn == 1.3.0
+    $ pip install numpy == 1.25
+    $ pip install pandas == 2.0.3
+    $ pip install joblib == 1.3.1
+    $ pip install matplotlib == 3.7.1
 
 Datasets
 ====
