@@ -53,7 +53,7 @@ Datasets
     `gene_transcriptome`:the transcriptome-based gene similarity network. `gene_coexpression`:the gene co-expression network. 
     `protein_sequence`: the protein sequence similarity network.
     `bionic_embed`: Embedding of drugs and targets extracted by the heterogeneous network integration algorithm BIONIC, ie `drug_features.tsv` and `target_features.tsv`. 
-     `wrm_start`: Five datasets obtained by `run data_split.py`. each datase is randomly divided into training, validation and test sets with a 7:1:2 ratio.
+     `warm_start`: Five datasets obtained by `run data_split.py`. each datase is randomly divided into training, validation and test sets with a 7:1:2 ratio.
 Run DrugMAN on Our Data to Reproduce Result
 ====
         To train DrugMAN, where we provide the whole warm-start data in `data/warm_start/`. Run the `main.py`, you start train the model. 
