@@ -43,17 +43,17 @@ Datasets
 ====
     The data folder contains four folders and a csv file (`all_bind.csv`). The four foders are `drug_network`, 
     `target_network`, `bionic_emb` and `warm_start` separately.
-`all_bind.csv`:  Drug-target interaction data are collected from five public sources including, Drugbank, 
-map of Molecular Targets of Approved drugs (MTA), CTD, ChEMBL and BindingDB.
- `drug_network`: Four drug-related similarity networks. `Drug_disease`: the disease-based drug association network. 
-     `drug_side effect`: the side effect-based drug network. `drug_transciptome`: the transcriptome-based drug similarity network. 
-      `drug_smiles`: the drug structure similarity network.
-        `target_network`: seven target-related similarity networks. `gene_disease`: the disease-based gene association network. 
-        `gene_pathway`: the pathway-based gene network. `gene_chromosomal`:the chromosomal location-based gene network. 
-        `gene_transcriptome`:the transcriptome-based gene similarity network. `gene_coexpression`:the gene co-expression network. 
-        `protein_sequence`: the protein sequence similarity network.
-        `bionic_embed`: Embedding of drugs and targets extracted by the heterogeneous network integration algorithm BIONIC, ie `drug_features.tsv` and `target_features.tsv`. 
-         warm_start: Five datasets obtained by `run data_split.py`. each datase is randomly divided into training, validation and test sets with a 7:1:2 ratio.
+    `all_bind.csv`:  Drug-target interaction data are collected from five public sources including, Drugbank, 
+    map of Molecular Targets of Approved drugs (MTA), CTD, ChEMBL and BindingDB.
+    `drug_network`: Four drug-related similarity networks. `Drug_disease`: the disease-based drug association network. 
+    `drug_side effect`: the side effect-based drug network. `drug_transciptome`: the transcriptome-based drug similarity network. 
+    `drug_smiles`: the drug structure similarity network.
+    `target_network`: seven target-related similarity networks. `gene_disease`: the disease-based gene association network. 
+    `gene_pathway`: the pathway-based gene network. `gene_chromosomal`:the chromosomal location-based gene network. 
+    `gene_transcriptome`:the transcriptome-based gene similarity network. `gene_coexpression`:the gene co-expression network. 
+    `protein_sequence`: the protein sequence similarity network.
+    `bionic_embed`: Embedding of drugs and targets extracted by the heterogeneous network integration algorithm BIONIC, ie `drug_features.tsv` and `target_features.tsv`. 
+     `wrm_start`: Five datasets obtained by `run data_split.py`. each datase is randomly divided into training, validation and test sets with a 7:1:2 ratio.
 Run DrugMAN on Our Data to Reproduce Result
 ====
         To train DrugMAN, where we provide the whole warm-start data in `data/warm_start/`. Run the `main.py`, you start train the model. 
