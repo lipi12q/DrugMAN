@@ -7,9 +7,11 @@ Introduction
 > Convolutions), which outperforms the existing state-of-the-art network embedding methods, to obtain drug/gene representation. Here, you can also load your own embeddings. 
 > The second network uses multi-head attention mechanisms to capture and learn association information in drug-target pairs, and obtains drug-target interaction scores through 
 > a series of fully connected classification layers.
+
 Framework
 ====
 ![image](https://github.com/lipi12q/DrugMAN/blob/main/%7FDrugMAN_framework.jpg) 
+
 System Requirement
 ====
         The source code developed in Python 3.8 using PyTorch 2.0.0. The required python dependencies are given below. DrugMAN is supported for 
