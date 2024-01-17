@@ -22,8 +22,7 @@ System Requirement
         matplotlib >= 3.7.1
 Installation Guide
 ====
-        Firt set up a new conda environment
-        ----
+        ####Firt set up a new conda environment
         # create a new conda environment
         $ conda create –name drugman pythonn==3.8
         $ conda activate drugman
