@@ -41,8 +41,8 @@ Installation Guide
         $ pip install matplotlib == 3.7.1
 Datasets
 ====
-        The data folder contains four folders and a csv file (`all_bind.csv`). The four foders are `drug_network`, `target_network`, 
-        `bionic_emb` and `warm_start` separately.
+The data folder contains four folders and a csv file (`all_bind.csv`). The four foders are `drug_network`, 
+`target_network`, `bionic_emb` and `warm_start` separately.
         `all_bind.csv`:  Drug-target interaction data are collected from five public sources including, Drugbank, map of Molecular 
          Targets of Approved drugs (MTA), CTD, ChEMBL and BindingDB.
         `drug_network`: Four drug-related similarity networks. `Drug_disease`: the disease-based drug association network. 
