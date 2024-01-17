@@ -1,19 +1,19 @@
 Introduction
 ====
         This repository contains the PyTorch implementation of DrugMAN framework, as described in out paper ‘Drug-target interaction prediction by integrating heterogeneous 
-        information with mutual attention network’. DrugMAN is a modeling framework that applies multi-head attention mechanisms to learn drug-target association confidence 
-        and predict drug-target interactions.DrugMAN contains two main networks. The first network intends to learn accurate and comprehensive representations for drugs and 
-        protein targets from heterogeneous drug and gene/protein networks. In our model, we use the network integration algorithm BIONIC (Biological Network Integration using 
-        Convolutions), which outperforms the existing state-of-the-art network embedding methods, to obtain drug/gene representation. Here, you can load your own embeddings. 
-        The second network uses multi-head attention to capture and learn association information in drug-target pairs, and obtains drug-target interaction scores through 
+        information with mutual attention network’. DrugMAN is a modeling framework that applies multi-head attention mechanisms to learn drug-target interaction information 
+        and Predict the probability of drug target binding.DrugMAN contains two main networks. The first network intends to learn accurate and comprehensive representations 
+        for drugs and protein targets from heterogeneous drug and gene/protein networks. In our model, we use the network integration algorithm BIONIC (Biological Network Integration using 
+        Convolutions), which outperforms the existing state-of-the-art network embedding methods, to obtain drug/gene representation. Here, you can also load your own embeddings. 
+        The second network uses multi-head attention mechanisms to capture and learn association information in drug-target pairs, and obtains drug-target interaction scores through 
         a series of fully connected classification layers.
 Framework
 ====
 ![image](https://github.com/lipi12q/DrugMAN/blob/main/%7FDrugMAN_framework.jpg) 
 System Requirement
 ====
-        The source code developed in Python 3.8 using PyTorch 2.0.0. The required python dependencies are given below. DrugMAN is supported for any standard computer and operating 
-        system (Windows/macOS/Linux) with enough RAM to run. There is no additional non-standard hardware requirements.
+        The source code developed in Python 3.8 using PyTorch 2.0.0. The required python dependencies are given below. DrugMAN is supported for 
+        any standard computer and operating system (Windows/macOS/Linux) with enough RAM to run. There is no additional non-standard hardware requirements.
         torch >=2.0.0
         scikit-learn >= 1.3.0
         numpy >= 1.25
@@ -58,8 +58,8 @@ Datasets
 Run DrugMAN on Our Data to Reproduce Result
 ====
         To train DrugMAN, where we provide the whole warm-start data in `data/warm_start/`. Run the `main.py`, you start train the model. 
-        The `main.py` takes about 15 minutes on GPU ram=24GB and approximately 9 hours on CPU ram=4GB. For running DrugMAN on the full warm-start data,
-        we advise GPU ram>=8GB and CPU ram >=16GB. The result will be saved in the `result` foder. 
+        The `main.py` takes about 15 minutes on GPU ram=24GB and approximately 6 hours on CPU ram=8GB. For running DrugMAN on the full warm-start data,
+        we advise GPU ram>=8GB and CPU ram >=16GB. The run results will be saved in the `result` foder. 
 
 
 
