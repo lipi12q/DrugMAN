@@ -47,7 +47,7 @@ Installation Guide
 
 Datasets
 ====
-> `data/drug_network`: Drug-related similarity networks.
+> `data/drug_network`: Drug-related similarity networks. <br>
 > `data/gene_network`: Gene-related similarity networks.
 > `data/all_bind.csv`: Drug-target interaction data.
 
