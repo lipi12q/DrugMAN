@@ -48,7 +48,7 @@ Datasets
         map of Molecular Targets of Approved drugs (MTA), CTD, ChEMBL and BindingDB.
 
         `drug_network`: Four drug-related similarity networks. `Drug_disease.csv`: the disease-based drug association network. 
-         `drug_side effect.csv`: the side effect-based drug network. `drug_transciptome.csv`: the transcriptome-based drug similaritynetwork.
+        `drug_side effect.csv`: the side effect-based drug network. `drug_transciptome.csv`: the transcriptome-based drug similaritynetwork.
         `drug_smiles.csv`: the drug structure similarity network.
 
         `target_network`: seven target-related similarity networks. `gene_disease.csv`: the disease-based gene association network.
