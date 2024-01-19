@@ -1,0 +1,21 @@
+{
+  "net_names": [
+    "/hy-tmp/Disease-based drug similarity network.txt",
+    "/hy-tmp/Drug structure similarity network.txt",
+    "/hy-tmp/Side effect-based drug similarity network.txt",
+    "/hy-tmp/Transcriptome-based drug similarity network.txt"
+  ],
+  "out_name": "/hy-tmp/drug",
+  "epochs": 10000,
+  "batch_size": 2048,
+  "learning_rate": 0.0005830944755717023,
+  "neighbor_sample_size": 2,
+  "gat_shapes": {
+    "dimension": 68,
+    "n_heads": 10,
+    "n_layers": 2
+  },
+  "embedding_size": 512,
+  "save_model": false,
+  "model_parallel": true
+}

@@ -1,0 +1,24 @@
+{
+  "net_names": [
+    "/hy-tmp/Disease-based gene similarity network.txt",
+    "/hy-tmp/Pathway-based gene similarity network.txt",
+    "/hy-tmp/Chromosomal location–based gene similarity network.txt",
+    "/hy-tmp/Gene co-expression network.txt",
+    "/hy-tmp/Protein-protein interaction network.txt",
+    "/hy-tmp/Transcriptome-based gene similarity network.txt",
+    "/hy-tmp/protein_sequence similarity network.txt"
+  ],
+  "out_name": "/hy-tmp/gene",
+  "epochs": 10000,
+  "batch_size": 2048,
+  "learning_rate": 0.0005830944755717023,
+  "neighbor_sample_size": 2,
+  "gat_shapes": {
+    "dimension": 68,
+    "n_heads": 10,
+    "n_layers": 2
+  },
+  "embedding_size": 512,
+  "save_model": false,
+  "model_parallel": true
+}
