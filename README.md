@@ -52,7 +52,7 @@ Datasets
 > `data/all_bind.csv`: Drug-target interaction data. <br>
 > `drug_emb.json`: Input file of the heterogeneous network algorithm BIONIC to extracted drug represtation.<br>
 > `target_emb.json`: Input file of the heterogeneous network algorithm BIONIC to extracted target represtation.<br>
-
+> we alse provide the demo dataset in `data/warm_start` and the drug/target feature trained by Bionic in `data/bionic_emb` to reproduce the training process.<br>
 Run DrugMAN on Our Data to Reproduce Result
 ====
 > There are four steps to complete the process of training the model. <br>
@@ -60,6 +60,7 @@ Run DrugMAN on Our Data to Reproduce Result
 > *Second, run `drug_emb.json` using BIONIC algorithm to extracted drug represtation.<br>
 > *Third, run `target_emb.json` using BIONIC algorithm to extracted target represation.<br>
 > *Forth, run `main.py`. note that you need to create a `result` foder to store computational result.<br>
+> we alse provide the `demo.ipynb`, A more detailed training procedure is available here.<br> 
 > The `main.py` takes about 15 minutes on GPU ram=24GB and approximately 6 hours on CPU ram=8GB. For running DrugMAN,
 > we advise GPU ram>=8GB and CPU ram >=16GB.
 
